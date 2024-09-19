@@ -1,0 +1,369 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+header{
+	background-color: #ff3333;
+	text-align: center;
+}
+header a{
+	text-decoration: none;
+	outline: none;
+	display: block;
+	transition: .3s ease-in-out;
+}
+.logo{
+	color: #EEE8AA;
+	font-family: 'Brush Script MT',cursive;
+	font-size: 2.5em;
+	padding: 20 px 0;
+}
+nav{
+	display: table;
+	margin: 0 auto;
+
+}
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.topmenu:after{
+	content: "";
+	display: table;
+	clear: both;
+
+
+}
+.topmenu >li{
+	width: 25%;
+	float: left;
+	position: relative;
+	font-family: "URW Chancery L", cursive;
+
+}
+.topmenu > li > a{
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	color:#FAFAD2;
+	padding: 15px 30px;
+}
+.topmenu li a:hover{
+	color: #ff3333 ;
+
+}
+.submenu-link:after{
+	font-family: 'Open Sans', sans-serif;
+	color: inherit;
+	margin-left:10px ;
+}
+.submenu{
+	background-color: black;
+	position: absolute;
+	left:0 ;
+	top: 100%;
+	z-index: 5;
+	width: 180px;
+	opacity: 0;
+	transform: scaleY(0);
+	transform-origin: 0 0;
+	transition: .5s ease-in-out;
+}
+.submenu a{
+	color: white;
+	text-align: left;
+	padding: 12px 15px;
+	font-size: 13px;
+	border-bottom:1px solid white ;
+}
+.submenu li:last-child a{
+	border-bottom: none;
+}
+.topmenu > li:hover .submenu{
+	opacity: 1;
+	transform: scaleY(1);
+}
+
+
+
+
+
+
+.footer{
+background:#000;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+
+img { 
+width: 100%; 
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container img {
+    width: 100%;
+}
+
+.container .btn1 {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.container .btn1:hover {
+	color: white;
+    background-color: black;
+}
+
+
+
+.container .btn2 {
+    position: absolute;
+    top: 35%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.container .btn2:hover {
+	color: white;
+    background-color: black;
+}
+
+
+.container .btn3 {
+    position: absolute;
+    top: 42%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.container .btn3:hover {
+	color: white;
+    background-color: black;
+}
+
+
+.container .btn4 {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.container .btn4:hover {
+	color: white;
+    background-color: black;
+}
+
+
+
+.container .btn5 {
+    position: absolute;
+    top: 89%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.container .btn5:hover {
+	color: white;
+    background-color: black;
+}
+
+
+.container .btn6 {
+    position: absolute;
+    top: 61%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.container .btn6:hover {
+	color: white;
+    background-color: black;
+}
+
+
+.container .btn7 {
+    position: absolute;
+    top: 53%;
+    left: 91%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.container .btn7:hover {
+	color: white;
+    background-color: black;
+}
+
+
+.container .btn8 {
+    position: absolute;
+    top: 68%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.container .btn8:hover {
+	color: white;
+    background-color: black;
+}
+
+
+.container .btn9 {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.container .btn9:hover {
+	color: white;
+    background-color: black;
+}
+
+
